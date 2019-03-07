@@ -1,0 +1,524 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 9, 2018, 10:52:25 PM
+    Author     : Risshiganesh V
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 25, 2019, 7:29:18 PM
+    Author     : Q.B.Guan
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 9, 2018, 10:47:30 PM
+    Author     : Risshiganesh V
+*/
+
+#headername{
+     margin:0%;
+    color:whitesmoke;
+    font-family: fantasy;
+    font-style: initial;
+    font-size:130px;
+    align-items:center;
+    margin-top: 0;
+    display: inline-block;
+    align: center;
+}
+
+#hdclr{
+    background-color: #111;
+    position: relative;
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  size: 27px;
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-family: Century Gothic;
+}
+
+.btn1{
+    background-color: silver; /* Green */
+    hover {background-color: #46a049;}
+    height: 100px;
+    width: 110px;
+    margin-left: 340px;
+    margin-top: 20px;
+}
+
+.btn2{
+    background-color: silver;/* Green */
+    hover {background-color: #46a049;}
+    height:50px;
+    width: 110px;
+    margin-left: 256px;
+    margin-top: 20px;
+} 
+
+.btn3{
+    background-color: silver; /* Green */
+    hover {background-color: #46a049;}
+    height:50px;
+    width: 110px;
+    margin-left: 256px;
+    margin-top: 20px;
+}
+
+.heading{
+    margin-top: 400px;
+    margin-bottom: 400px;
+    font-size: 50px;
+    font-family: Edwardian Script ITC;
+}
+    
+.bg2{
+    background-image: url("Image/boathouse-cottage-dock-147411.jpg");
+    min-height: 900px;
+    background-size: 100%;
+}
+
+.weddingpackage{
+    margin-top: 140px;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+.weddingpackage1{
+    margin-top: 140px;
+    margin-left: 130px;
+    margin-bottom: 30px;
+}
+
+.weddingpackage2{
+    margin-top: 140px;
+    margin-left: 130px;
+    margin-bottom: 30px;
+}
+
+.pck_h1{
+    color: #111;
+    font-size: 27px;
+    font-family: Century Gothic;
+    width: 400px;
+    margin-left: 220px;
+}
+
+.pck_h2{
+    color: #111;
+    font-size: 27px;
+    font-family: Century Gothic;
+    width: 400px;
+    margin-left: 130px;
+}
+
+.pck_h3{
+    color: #111;
+    font-size: 27px;
+    font-family: Century Gothic;
+    width: 400px;
+    margin-left: 130px;
+}
+
+.dec1{
+     color: #111;
+    font-size: 18px;
+    font-family: Century Gothic;
+    width: 400px;
+    margin-left: 220px;
+    margin-top: 0px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.dec2{
+     color: #111;
+    font-size: 18px;
+    font-family: Century Gothic;
+    width: 400px;
+    margin-left: 130px;
+    margin-top: 0px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.dec3{
+     color: #111;
+    font-size: 18px;
+    font-family: Century Gothic;
+    width: 400px;
+    margin-left: 130px;
+    margin-top: 0px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.bg2{
+      position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bodylayout{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    
+    background-size: 100%;
+}
+
+.container{
+    display:inline-block;
+    cursor: pointer;
+    margin-left: 7px;
+    
+}
+.bar1,.bar2,.bar3{
+    background-color:white;
+    width:35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/*rotate first bar*/
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+/*fadeout the second bar*/
+.change bar2{
+    opacity: 0;
+}
+/*rotate last bar*/
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: grey;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 65px;
+  letter-spacing: 10px;
+  opacity: 0.65;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.foot{
+    height:0px;
+    text-align: center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+
+
+
+
+
+
+#headername{
+    margin:0%;
+    color:grey;
+    font-family: sans-serif;
+    font: lato;
+    font-style: initial;
+    font-size:40px;
+    align-items:center;
+    margin-top: 0;
+    display: inline-block;
+    align: center;
+    margin-left: 850px;
+}
+
+#headername4{
+    margin:0%;
+    color:lightgrey;
+    font-family: sans-serif;
+    font: lato;
+    font-style: initial;
+    font-size:130px;
+    align-items:center;
+    margin-top: 0;
+    display: inline-block;
+    align: center;
+    margin-left: 700px;
+}
+
+#headername5{
+    margin:0%;
+    color:lightgrey;
+    font-family: sans-serif;
+    font: lato;
+    font-style: initial;
+    font-size:130px;
+    align-items:center;
+    margin-top: 0;
+    display: inline-block;
+    align: center;
+    margin-left: 600px;
+}
+
+#hdcolor{
+    background-image: url("Images/bank-note-banknote-banknotes-259251.jpg");
+    background-size: 100%;
+    margin: 0;
+    height: 400px;
+    position: inherit;
+    width:100%;
+    max-width: 1990px;
+    margin-top: 0;
+    position: inherit;
+}
+
+#bodylayout{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.container{
+    display:inline-block;
+    cursor: pointer;
+    margin-left: 7px;
+    
+}
+.bar1,.bar2,.bar3{
+    background-color:white;
+    width:35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/*rotate first bar*/
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+/*fadeout the second bar*/
+.change bar2{
+    opacity: 0;
+}
+/*rotate last bar*/
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: grey;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+*{box-sizing: border-box}
+
+/*add padding to the container*/
+.container7{
+    padding: 16px;
+    font-family: sans-serif;
+    font: lato;
+    font-style: initial;
+}
+
+.container8{
+    margin-left: 600px;
+}
+
+/*full-width input fields*/
+input[type=text]{
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+    
+    hr{
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+}
+
+#currency{
+    font-size: 12px;
+    height: 49px;
+    width: 50%;
+    margin-bottom: 20px;
+    
+}
+
+#number1{
+    font-size: 12px;
+    height: 49px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+.button{
+    display: block;
+    width: 50%;
+    border: none;
+    background-color: #0099ff;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+.button2{
+    display: block;
+    width: 50%;
+    border: none;
+    background-color: #ff1a1a;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 25, 2019, 7:30:26 PM
+    Author     : Q.B.Guan
+*/
+

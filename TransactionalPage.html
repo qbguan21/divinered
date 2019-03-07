@@ -1,0 +1,154 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Transaction</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="TransactionalPage.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="jsfile.js"></script>
+    </head>
+    
+    <body id="bodylayout">
+             <header id="hdclr">
+             <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" >Home</a>
+                <a href="PackagePage.html" >Wedding</a>
+                <a href="PPakagePage.html">Product</a>
+                <a href="LPackagePage.html">Portrait</a>
+                <a href="AboutUs.html">About Us</a>
+            </div>
+            
+           <!-- Use any element to open the side navigate -->
+           <div onclick="openNav()">
+            <div class="container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            </div>
+           </div>
+        </header>
+        
+            <div class="bg2">
+                 <div class="caption">
+    <span class="border">Book Now</span>
+  </div>
+        </div>
+        
+            <div class="container7">
+                <h1>Booking Form</h1>
+                <p7>Please fill up this form to transfer your money</p7>
+                <hr></hr>
+                
+                <div class="container8">
+                    <label for="sname"> Full Name : </label>
+                <br></br>
+                
+                <input value="#{moneyTransferBean.senderName}" type="text" id="textinput" name="sendername" placeholder="Enter name of sender"/>
+                <td></td>
+                <br></br>
+                <label for="rname">Age : </label>
+                <br></br>
+                <input value="#{moneyTransferBean.receiverName}" type="text" id="textinput" name="receivername" placeholder="Enter name of receiver"/>
+                <td></td>
+                <br></br>
+                <label for="morigin">Address : </label>
+                <br></br>
+                <input value="#{moneyTransferBean.moneyOri}" type="text" id="textinput" name="moneyorigin" placeholder="Enter the origin of money"/>
+                <td></td>
+                <br></br>
+                <label for="mdestination">Date of Event : </label>
+                <br></br>
+                <input value="#{moneyTransferBean.moneyDest}" type="text" id="textinput" name="moneydestination" placeholder="Enter money destination"/>
+                <td></td>
+                <br></br>
+                <label for="cconversionrate">Currency Conversion Rate :</label>
+                <br></br>
+                <input value="#{moneyTransferBean.conversionRate}" type="text" id="textinput" name="currencyconvertionrate" placeholder="Enter currency conversion rate"/>
+                <td></td>
+                <br></br>
+                <label for="sendercurrency">Currency of Sender :</label>
+                <br></br>
+                <div>
+                    <i class="fafa-cc-US Dolar USD" style="color: navy"></i>
+                    <i class="fafa-cc-Euro EUR" style="color: red"></i>
+                    <i class="fafa-cc-Hong Kong Dollar HKD" style="color: navy"></i>
+                    <i class="fafa-cc-Chinese Yuan CNY" style="color: navy"></i>
+                    <i class="fafa-cc-Australian Dollar AUD " style="color: navy"></i>
+                    <i class="fafa-cc-Indian Rupee INR" style="color: navy"></i>
+                    <i class="fafa-cc-Indonesian Rupiah IDR" style="color: navy"></i>
+                    <i class="fafa-cc-Malaysian Ringgit MYR" style="color: navy"></i>
+                    <i class="fafa-cc-Singapore Dollar SGD" style="color: navy"></i>
+                </div>
+              <td></td>
+               
+              <select value="#{moneyTransferBean.senderCurrency}" id="currency" name="currencytype">
+                    <option value="USD"> US Dolar USD </option>
+                    <option value="Euro"> Euro EUR </option>
+                    <option value="HKD"> Hong Kong Dollar HKD </option>
+                    <option value="CNY"> Chinese Yuan CNY </option>
+                    <option value="AUD"> Australian Dollar AUD </option>
+                    <option value="INR"> Indian Rupee INR </option>
+                    <option value="IDR"> Indonesian Rupiah IDR </option>
+                    <option value="MYR"> Malaysian Ringgit MYR </option>
+                    <option value="SGD"> Singapore Dollar SGD </option>
+                   </select> 
+                <td></td>
+                <br></br>
+                <label for="receivercurrency">Currency of Receiver :</label>
+                <br></br>
+                <div>
+                    <i class="fafa-cc-US Dolar USD" style="color: navy"></i>
+                    <i class="fafa-cc-Euro EUR" style="color: red"></i>
+                    <i class="fafa-cc-Hong Kong Dollar HKD" style="color: navy"></i>
+                    <i class="fafa-cc-Chinese Yuan CNY" style="color: navy"></i>
+                    <i class="fafa-cc-Australian Dollar AUD " style="color: navy"></i>
+                    <i class="fafa-cc-Indian Rupee INR" style="color: navy"></i>
+                    <i class="fafa-cc-Indonesian Rupiah IDR" style="color: navy"></i>
+                    <i class="fafa-cc-Malaysian Ringgit MYR" style="color: navy"></i>
+                    <i class="fafa-cc-Singapore Dollar SGD" style="color: navy"></i>
+                </div>
+                <td></td>
+                
+                <select value="#{moneyTransferBean.receiverCurrency}" id="currency" name="currencytype">
+                    <option value="USD"> US Dolar USD </option>
+                    <option value="Euro"> Euro EUR </option>
+                    <option value="HKD"> Hong Kong Dollar HKD </option>
+                    <option value="CNY"> Chinese Yuan CNY </option>
+                    <option value="AUD"> Australian Dollar AUD </option>
+                    <option value="INR"> Indian Rupee INR </option>
+                    <option value="IDR"> Indonesian Rupiah IDR </option>
+                    <option value="MYR"> Malaysian Ringgit MYR </option>
+                    <option value="SGD"> Singapore Dollar SGD </option>
+                   </select> 
+                <td>  </td>
+                <br></br>
+                <label for="amounttobetransfered">Amount to be Transfered :</label>
+                <br></br>
+                <h:inputText value="#{moneyTransferBean.transferAmt}" id="number1"/>
+                <td></td>
+                <br></br>
+                <label  for="transferfee">Transfer Fee: (eg: 2%)</label>
+                <br></br>
+                <h:inputText value="#{moneyTransferBean.transferFee}" id="textinput"/>
+                <td></td> 
+                <br></br>
+                <label for="amounttobepaid">Total Amount to be Paid :</label>
+                <br></br>
+                <h:inputText value="#{moneyTransferBean.amtTobePaid}" id="number1"/>
+                <td></td>
+                <br></br>
+                <label for="amounttobereceived">Amount to be Received:</label>
+                <br></br>
+                <h:inputText value="#{moneyTransferBean.receiveAmt}" id="textinput"/>
+                <td></td> 
+                <br></br>
+                <button id="resultbtn" class="button" action="#{moneyTransferBean.callService()}">Confirm</button>
+                <a href="index.html"><button type="button" class="button2" >Cancel</button></a>
+                 
+                <td></td>
+                </div>
+            </div>
+        
+    <body>
+</html>
